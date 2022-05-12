@@ -52,12 +52,17 @@
     transition: all 2s;
 }
 
+
+
 .shopping:hover .shoppingItems {
     display: block !important;
 }
 
 .contentChild{
     width: 90%;
+    width: 45%;
+    font-family: system-ui;
+    font-size: 24px;
 }
 
 .contentControl{
@@ -154,7 +159,7 @@ function showInfo(title, infoContent){
     shoppingTitle.addEventListener('mouseover', ()=>{
         instructions.style.display = 'none'
         content.style.display = 'block';
-        content.style.width = '60%';
+        content.style.width = '100%';
         content.style.opacity = '1';
         for(let i = 0; i < contentChild.length; i++){
             if(contentChild[i] != content){
