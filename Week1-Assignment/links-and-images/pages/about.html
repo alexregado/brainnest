@@ -1,93 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/links-and-images/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>About</title>
 </head>
+
 <body>
-    <style>
-        /* CREATE A MORE SIMPLIFIED VERSION OF THE LISTS - dropdown */
-        .shoppingTitle{
-    color: red;
-}
-
-.nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: sans-serif;
-    margin: -15px;
-}
-
-.content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.showContent{
-    width: 70%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    font-family: sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 50px;
-}
-
-.shoppingItems, .todosContent, .travelContent, .gamesContent, .shoppingItems{
-    display: none;
-    width: 0%;
-    transition: all 2s;
-}
-
-
-
-.shopping:hover .shoppingItems {
-    display: block !important;
-}
-
-.contentChild{
-    width: 90%;
-    width: 45%;
-    font-family: system-ui;
-    font-size: 24px;
-}
-
-.contentControl{
-    background: linear-gradient(90deg, rgb(230 141 141) 0%, rgba(203,161,80,1) 39%, rgba(0,212,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: sans-serif;
-    text-transform: uppercase;
-}
-
-    </style>
     <main>
-        <div class="nav">
+        <nav>
             <div class="titleWrapper">
                 <h1 style="text-transform: uppercase;font-size: 44px;">About</h1>
-                <h3 style="margin-top: -26px; font-weight: 300;">Alexandre Regado</h3>
+                <h3 style="margin-top: -26px; font-weight: 300;">Alexandre</h3>
             </div>
-            <a href="./links-and-images/indexA.html">Go back to Homepage</a>
-        </div>
+            <a class="goHome" href="../indexA.html">Go back to Homepage</a>
+        </nav>
         <div class="content">
             <div class="showContent">
                 <p class="instructions">Hover over the titles to show content!</p>
                 <div class="contentChild">
                     <ul class="shoppingItems child">
-                        <li class="listItem"><img src="/links-and-images/images/cookies.jpe"> Cookies</li>
+                        <li class="listItem">Cookies</li>
                         <li class="listItem">Chocolate</li>
                         <li class="listItem">Gummies</li>
                         <li class="listItem">A brand new iPad</li>
@@ -107,40 +43,44 @@
 
                 <div class="contentChild">
                     <ol class="travelContent child">
-                        <ul>
-                            <li>New York</li>
+                            <li>USA</li>
+                            <ul>
+                                <li>New York</li>
+                                <li>Yellowstone National Park</li>
+                            </ul>
                             <li>Rome</li>
                             <li>Venece</li>
-                            <li>Yellowstone National Park</li>
                             <li>Paris</li>
-                        </ul>
                     </ol>
                 </div>
 
                 <div class="contentChild">
                     <ul class="gamesContent child">
-                        <ol>
                             <li>GTA San Andreas</li>
                             <li>Sly Cooper</li>
                             <li>GTA V</li>
-                            <li>Forza Horizon 5</li>
-                            <li>Forza Horizon 4</li>
-                        </ol>
+                            <li>Forza</li>
+                            <ol>
+                                <li>Forza Horizon 5</li>
+                                <li>Forza Horizon 4</li>
+                            </ol>
                     </ul>
                 </div>
             </div>
             <div class="contentControl">
                 <div class="shopping">
-                    <h2 class="shoppingTitle">Shopping List</h2>
+                    <h2 class="mainTitle shoppingTitle">Shopping List</h2>
                 </div>
                 <div class="todos">
-                    <h2 class="todoTitle">Todo's List</h2>
+                    <h2 class="mainTitle todoTitle">Todo's List</h2>
                 </div>
                 <div class="travel">
-                    <h2 class="shoppingTitle">Places To Visit</h2>
+                    <a href="./places.html" title="Click me!">
+                        <h2 class="mainTitle travelTitle">Places To Visit</h2>
+                    </a>
                 </div>
                 <div class="games">
-                    <h2 class="shoppingTitle">Top 5 Games</h2>
+                    <h2 class="mainTitle gamesTitle">Top 5 Games</h2>
                 </div>
             </div>
         </div>
@@ -149,30 +89,29 @@
 
 <script>
 
-function showInfo(title, infoContent){
-    let instructions = document.querySelector('.instructions');
-    let shoppingTitle = document.querySelector(`${title}`);
-    let content = document.querySelector(`${infoContent}`);
-    let contentWrapper = document.querySelector('.showContent');
-    let contentChild = document.getElementsByClassName('child');
+    function showInfo(title, infoContent) {
+        let instructions = document.querySelector('.instructions');
+        let shoppingTitle = document.querySelector(`${title}`);
+        let content = document.querySelector(`${infoContent}`);
+        let contentWrapper = document.querySelector('.showContent');
+        let contentChild = document.getElementsByClassName('child');
 
-    shoppingTitle.addEventListener('mouseover', ()=>{
-        instructions.style.display = 'none'
-        content.style.display = 'block';
-        content.style.width = '100%';
-        content.style.opacity = '1';
-        for(let i = 0; i < contentChild.length; i++){
-            if(contentChild[i] != content){
-                contentChild[i].style.display = 'none';
-            } 
-        }
-    });
-}
+        shoppingTitle.addEventListener('mouseover', () => {
+            instructions.style.display = 'none'
+            content.style.display = 'block';
+            content.style.width = '100%';
+            content.style.opacity = '1';
+            for (let i = 0; i < contentChild.length; i++) {
+                (contentChild[i] != content) ? contentChild[i].style.display = 'none' : false
+            }
+        });
+    }
 
-showInfo(".shopping", ".shoppingItems");
-showInfo(".todos", ".todosContent");
-showInfo(".travel", ".travelContent");
-showInfo(".games", ".gamesContent");
+    showInfo(".shopping", ".shoppingItems");
+    showInfo(".todos", ".todosContent");
+    showInfo(".travel", ".travelContent");
+    showInfo(".games", ".gamesContent");
 
 </script>
+
 </html>

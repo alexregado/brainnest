@@ -7,7 +7,139 @@
         <title>FDIndustryTraining</title>
     </head>
     <body>
-        <p>Lorem, <em>ipsum.</em></p> 
-        <a href="/aboutUs.html">a</a>
+        <main>
+            <div class="logo">
+                <img class="imgLogo" src="brainnest_logo.png" alt="Brainnest logo">
+                <h1 class="mainTitle">Frontend Development Industry Training</h1>
+            </div>
+            <div class="weeks">
+                <a href="./Week1-Assignment/links-and-images/indexA.html"><div class="week one">Week 1 <br></div></a>
+                <a href="https://google.pt"><div class="week two">Week 2 <br></div></a>
+                <a href="https://google.pt"><div class="week three">Week 3 <br></div></a>
+                <a href="https://google.pt"><div class="week four">Week 4 <br></div></a>
+            </div>
+            <div class="certificate">
+                <h2 class="certTitle">Certificate of Completion</h2>
+                <img class="certImg" src="https://i.ibb.co/GFdN95B/certificate.jpg" alt="Certificate">
+                <div class="comingSoon">Coming Soon...</div>
+            </div>
+        </main>
     </body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .logo{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+
+        .imgLogo{
+            width: 30%;
+        }
+
+        .mainTitle{
+            font-weight: 500;
+            margin-top: -45px;
+        }
+
+        .weeks{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+        }
+
+        .week{
+            width: 14vw;
+            height: 9vw;
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+            line-height: 53px;
+            opacity: 0.7;
+            transition: 0.7s all;
+            background-size: 31%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            margin-bottom: 100px;
+        }
+
+        .week:hover{
+            opacity: 1;
+            transform: scale(1.3);
+        }
+
+        .week.one{
+            background-image: url(https://logodownload.org/wp-content/uploads/2016/10/html5-logo-10.png);
+        }
+
+        .week.two{
+            background-image: url(https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png);
+        }
+
+        .week.three{
+            background-image: url(https://fedojo.com/wp-content/uploads/2019/03/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png);
+            background-size: 67%;
+        }
+
+        .week.four{
+            background-image: url(https://raw.githubusercontent.com/MatheusHonorato/curso-front-end-marco-bruno/master/html-css-js.png);
+            background-size: 52%;
+        }
+
+        .tech{
+            font-size: 22px;
+            font-weight: 100;
+        }
+
+        .certificate{
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .certImg{
+            width: 15%;
+        }
+
+        .certTitle{
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        .comingSoon{
+            position: absolute;
+            width: 100%;
+            background-color: #000000b3;
+            height: 65px;
+            line-height: 65px;
+            bottom: 16%;
+        }
+
+
+    </style>
 </html>
