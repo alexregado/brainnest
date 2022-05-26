@@ -7,6 +7,7 @@
         <title>FDIndustryTraining</title>
     </head>
     <body>
+        <a href="../index.html" title="Go to first page" class="goHomeLink"><img src="../home-icon.png" alt="Home Icon" class="goHome"></a>
         <main>
             <div class="logo">
                 <img class="imgLogo" src="brainnest_logo.png" alt="Brainnest logo">
@@ -14,7 +15,7 @@
             </div>
             <div class="weeks">
                 <a href="./Week1-Assignment/links-and-images/indexA.html"><div class="week one">Week 1 <br></div></a>
-                <a href="https://google.pt"><div class="week two">Week 2 <br></div></a>
+                <a href="./Week2CSS/indexCss.html"><div class="week two">Week 2 <br></div></a>
                 <a href="https://google.pt"><div class="week three">Week 3 <br></div></a>
                 <a href="https://google.pt"><div class="week four">Week 4 <br></div></a>
             </div>
@@ -138,6 +139,26 @@
             height: 65px;
             line-height: 65px;
             bottom: 16%;
+        }
+
+        .goHomeLink{
+            position: absolute;
+            top: -50px;
+            left: 7px;
+            width: 50px;
+            height: 100px;
+            transition: all 0.7s;
+        }
+
+        .goHome{
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 50px;
+        }
+
+        .goHomeLink:hover{
+            top: 7px;
         }
 
 

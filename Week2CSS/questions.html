@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Questions</title>
+    <style>
+        body{
+            font-family: sans-serif, Arial, Helvetica ;
+            background-color: black;
+            color: white;
+        }
+
+        ol{
+            width: 80%;
+            margin: auto;
+        }
+        
+        li {
+            font-weight: 600;
+            font-size: 17px;
+            margin-top: 70px;
+            color: #1b72ba;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        .header{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .csslogo{
+            width: 62%;
+            max-width: 300px;
+        }
+        .goHomeLink{
+            position: absolute;
+            top: -50px;
+            left: 7px;
+            width: 50px;
+            height: 100px;
+        }
+
+        .goHome{
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 50px;
+        }
+
+        .goHomeLink:hover{
+            top: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="../index.html" title="Go to first page" class="goHomeLink"><img src="../home-icon.png" alt="Home Icon" class="goHome"></a>
+    <div class="header">
+        <h1>Week 2 Exercises - CSS</h1>
+        <img src="https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png" alt="CSS Logo" class="csslogo">
+    </div>
+
+    <ol>
+        <li>What are the main differences between external, internal, and inline CSS? </li>
+        <p>The main diference is related to specificity of the rules (inline is the most specific but less practical) and loading time (external CSS will need to download the file first and then render the styles).</p>
+        <li>What is the syntax for class and ID selectors?</li>
+        <p>.class and #id</p>
+        <li>How would you apply a single rule to two different selectors?</li>
+        <p>.selectorOne, .selectorTwo {</p>
+        <li>Given an element that has an id of title and a class of primary, how would you use both attributes for a single rule?</li>
+        <p>#title.primary {</p>
+        <li>What does the descendant combinator do?</li>
+        <p>The descendant combinator allows the developer to change the style of a child element if is present in the parent element.</p>
+        <li>Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity? </li>
+        <p>The class selector rule because is more specific</p>
+        <li>From inside to outside, what is the order of box-model properties? </li>
+        <p>Content > padding > border > margin</p>
+        <li>What does the box-sizing CSS property do? </li>
+        <p>Changes the box-sizing property to the specified property (padding-box  or border-box)</p>
+        <li>What is the difference between the standard and alternative box model? </li>
+        <p>When setting the width/height of the element, the standard box model only takes in consideration the content box, while the alternative box model takes in consideration the content box + padding + border </p>
+        <li>Would you use margin or padding to create more space between 2 elements? </li>
+        <p>Margin</p>
+        <li>Would you use margin or padding if you wanted two elements to overlap each other? </li>
+        <p>Margin</p>
+        <li>What is the difference between a block element and an inline element? </li>
+        <p>The inline element only takes the necessary width and doesn’t start in a new line. 
+            A block element always starts in a new line and as a margin before and after.
+        </p>
+        <li>What is the difference between an inline element and an inline-block element? </li>
+        <p>An inline element does not respect the width/height properties, but the inline-block does</p>
+        <li>Is an h1 block or inline?</li>
+        <p>Block</p>
+        <li>Is button block or inline? </li>
+        <p>Block</p>
+        <li>Is div block or inline? </li>
+        <p>Block</p>
+        <li>Is span block or inline? </li>
+        <p>Inline</p>
+        <li>Whats the difference between a flex container and a flex item? </li>
+        <p>The flex container is the container where the flex properties are set and the flex item are the child elements inside the flex container</p>
+        <li>How do you create a flex item? </li>
+        <p>Set display: flex to the parent container of the flex item</p>
+        <li>What are the 3 values defined in the shorthand flex property? </li>
+        <p>Flex grow, shrink and basis</p>
+        <li>How do you make flex items arrange themselves vertically instead of horizontally? </li>
+        <p>Display: column</p>
+        <li>What is the difference between justify-content and align-items? </li>
+        <p>Justify-content defines the alignment along the main axis, while the align-items  align the items on the cross axis</p>
+        <li>How do you use flexbox to completely center a div inside a flex container? </li>
+        <p>FlexContainer {Display: flex; Flex-direction: column; justify-content: center; align-items: center;</p>
+        <li>Whats the difference between justify-content: space-between and justify-content: space-around? </li>
+        <p>Space-between will distribute the space between the flex items without any space at the ends, while the space around will distribute the space evenly including the flexs items on the ends of the parent element</p>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Asssigment - CSS</title>
+    <style>
+        body {
+            font-family: sans-serif, Arial, Helvetica;
+            background-color: black;
+            color: white;
+        }
+
+        .header {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .csslogo {
+            width: 62%;
+            max-width: 300px;
+        }
+
+        .exercise {
+            width: 30%;
+            max-width: 300px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            background-color: white;
+            color: #1b72ba;
+            font-weight: 600;
+            border-radius: 10px;
+            display: inline-block;
+            border: 3px solid #1b72ba;
+            font-size: 19px;
+            text-decoration: none;
+            transition: all 0.7s;
+        }
+
+        .exercise:hover {
+            transform: scale(1.3);
+            border: 3px solid white;
+            background-color: #1b72ba;
+            color: white;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 45px;
+        }
+
+        .goHomeLink{
+            position: absolute;
+            top: -50px;
+            left: 7px;
+            width: 50px;
+            height: 100px;
+        }
+
+        .goHome{
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 50px;
+        }
+
+        .goHomeLink:hover{
+            top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" title="Go to first page" class="goHome"><img src="../home-icon.png" alt="Home Icon" class="goHome"></a>
+
+    <div class="header">
+        <h1>Week 2 Exercises - CSS</h1>
+        <img src="https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png" alt="CSS Logo"
+            class="csslogo">
+    </div>
+    <div class="wrapper">
+        <a class="exercise" href="../Week1-Assignment/links-and-images/pages/about.html">Exercise 1</a>
+        <a class="exercise" href="./pageCopy.html">Exercise 2</a>
+        <a class="exercise" href="./questions.html">Questions</a>
+    </div>
+</body>
+
+</html>

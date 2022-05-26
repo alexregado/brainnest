@@ -237,3 +237,23 @@ footer{
     justify-content: center;
     flex-wrap: nowrap;
 }
+
+.goHomeLink{
+    position: absolute;
+    top: -50px;
+    left: 7px;
+    width: 50px;
+    height: 100px;
+    transition: all 0.7s;
+}
+
+.goHome{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 50px;
+}
+
+.goHomeLink:hover{
+    top: 7px;
+}
