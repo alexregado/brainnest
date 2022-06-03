@@ -93,7 +93,7 @@ function rpc(playerSelection, computerSelection) {
             }
 
             else if (playerSelection == "Paper") {
-                if (computerSelection == "scissors") {
+                if (computerSelection == "Scissors") {
                     resultHolder.innerHTML = `<div class="result computer">Computer Won! <br> ${computerSelection} beats ${playerSelection}</div>`;
                     computerScore++;
                     computerScoreHolder.textContent = computerScore;
@@ -104,7 +104,7 @@ function rpc(playerSelection, computerSelection) {
                 }
             }
 
-            else if (playerSelection == "scissors") {
+            else if (playerSelection == "Scissors") {
                 if (computerSelection == "Rock") {
                     resultHolder.innerHTML = `<div class="result computer">Computer Won! <br> ${computerSelection} beats ${playerSelection}</div>`;
                     computerScore++;
