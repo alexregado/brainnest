@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png">
     <title>CSS Questions</title>
     <style>
         body{
             font-family: sans-serif, Arial, Helvetica ;
             background-color: black;
+            color: white;
+        }
+
+        .pageTitle{
             color: white;
         }
 
@@ -28,10 +33,32 @@
             margin: 0;
         }
 
+        .headers{
+        background: linear-gradient(#000 , #323232);
+        margin-top: 65px;
+        text-align: center;
+        padding: 20px;
+        }
+
+        h1{
+            color: rgb(0, 255, 119);
+        }
+
+        h2{
+            color: #ffff00;
+        }
+
+        h3{
+            color: hsl(39, 100%, 50%);
+        }
+
+        h4{
+            color: red;
+        }
+
         .header{
-            width: 50%;
-            margin: auto;
             text-align: center;
+            padding: 20px;
         }
 
         .csslogo{
@@ -44,6 +71,7 @@
             left: 7px;
             width: 50px;
             height: 100px;
+            transition: all 0.7s;
         }
 
         .goHome{
@@ -62,7 +90,7 @@
 <body>
     <a href="../index.html" title="Go to first page" class="goHomeLink"><img src="../home-icon.png" alt="Home Icon" class="goHome"></a>
     <div class="header">
-        <h1>Week 2 Exercises - CSS</h1>
+        <h1 class="pageTitle">Week 2 Exercises - CSS</h1>
         <img src="https://glossariorubenalveshome.files.wordpress.com/2019/02/css3-logo.png" alt="CSS Logo" class="csslogo">
     </div>
 
@@ -118,5 +146,11 @@
         <li>Whats the difference between justify-content: space-between and justify-content: space-around? </li>
         <p>Space-between will distribute the space between the flex items without any space at the ends, while the space around will distribute the space evenly including the flexs items on the ends of the parent element</p>
     </ol>
+    <div class="headers">
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+    </div>
 </body>
 </html>

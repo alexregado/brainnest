@@ -1,3 +1,8 @@
+body{
+    color: white;
+    background-color: black;
+}
+
 main{
     width: 80%;
     margin: auto;
@@ -20,17 +25,12 @@ main{
 }
 
 .goHome {
-    width: 123px;
-    background-color: black;
-    padding: 29px;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 19px;
-    border-radius: 9% 51% 52% 78%;
+    width: 65px;
     text-align: center;
     cursor: pointer;
-    border: 10px solid #6ef1f4ba;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 /* ABOUT PAGE */

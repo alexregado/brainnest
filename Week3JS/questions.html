@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i2.wp.com/thebamboocode.com/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500">
+    <title>JS Questions</title>
+    <style>
+        body {
+            font-family: sans-serif, Arial, Helvetica;
+            background-color: black;
+            color: white;
+        }
+
+        .pageTitle {
+            color: white;
+        }
+
+        ol {
+            width: 80%;
+            margin: auto;
+        }
+
+        li {
+            font-weight: 600;
+            font-size: 17px;
+            margin-top: 70px;
+            color: #dab705;
+        }
+
+        ul li {
+            color: white !important;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .dataTypes li {
+            color: white;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .csslogo {
+            width: 62%;
+            max-width: 300px;
+        }
+
+        .goHomeLink {
+            position: absolute;
+            top: -50px;
+            left: 7px;
+            width: 50px;
+            height: 100px;
+            transition: all 0.7s;
+        }
+
+        .goHome {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 50px;
+        }
+
+        .goHomeLink:hover {
+            top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" title="Go to first page" class="goHomeLink"><img src="../home-icon.png" alt="Home Icon"
+            class="goHome"></a>
+    <div class="header">
+        <h1 class="pageTitle">Week 3 Exercises - JS</h1>
+        <img src="https://i2.wp.com/thebamboocode.com/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500" alt="CSS Logo" class="csslogo">
+    </div>
+
+    <ol>
+        <li>Name the three ways to declare a variable?</li>let, var and const</p>
+        <li>Which of the three variable declarations should you avoid and why?</li>
+        <p>Avoid to use <strong>var</strong> because it has global scope and can cause hoisting problems.</p>
+        <li>What rules should you follow when naming variables?</li>
+            <p>The name of the variable must have meaning and if contains multiple words camelCase must be used</p>
+            <p>The name or the variable must contain only letters, digitis, or the symbols $ and _</p>
+            <p>The first character must not be a digit</p>
+            <p>There are reserved words that cannot be used when naming variables</p>
+        <li>What should you look out for when using the + operator with numbers and strings?</li>
+        <p>The + operator is used to sum two values, but it can also be used to concatenate two strings.</p>
+        <li>How does the % operator work?</li>
+        <p>Returns the remainder of two operand.</p>
+        <li>Explain the difference between == and ===.</li>
+        <p>= compares the equity of two values without considering the type, while the === takes in consideration the type.</p>
+        <li>When would you receive a NaN result?</li>
+        <p>When the expected output type should be a number but is not</p>
+        <li>How do you increment and decrement a number?</li>
+        <p>Increment: ++ <br> Decrement: --</p>
+        <li>Explain the difference between prefixing and post-fixing increment/decrement operators.</li>
+        <p>When prefixing, the variable is incremented/decremented first and then the expression is evaluated using the new value of the variable. <br>When post-fixing, the expression is evaluated and then the variable is incremented/decremented. </p>
+        <li>What is operator precedence and how is it handled in JS?</li>
+        <p>Determines the order in which the operator is processed</p>
+        <li>How do you log information to the console?</li>
+        <p>console.log()</p>
+        <li>What does unary plus operator do to string representations of integers?</li>
+        <p>Concatenates the two strings.</p>
+        <li>What are the eight data types in JavaScript?</li>
+        <ol class="dataTypes">
+            <li>Strings</li>
+            <li>Numbers</li>
+            <li>Objects</li>
+            <li>Arrays</li>
+            <li>Booleans</li>
+            <li>NaN</li>
+            <li>Undefined</li>
+            <li>Null</li>
+        </ol>
+        <li>Which data type is NOT primitive?</li>
+        <p>Objects</p>
+        <li>What is the relationship between null and undefined?</li>
+        <img src="https://i.stack.imgur.com/T9M2J.png" alt="relationship between null and Undefined" width="300px">
+        <p></p>
+        <li>What is the difference between single, double, and backtick quotes for strings?</li>
+        <p>"" and '' are used to create string literals, while the `` are used to create template strings.</p>
+        <li>What is the term for embedding variables/expressions in a string?</li>
+        <p>String Interplation</p>
+        <li>Which type of quote lets you embed variables/expressions in a string?</li>
+        <p>``</p>
+        <li>How do you embed variables/expressions in a string?</li>
+        <p>string = `I am a ${typeof string}`;</p>
+        <li>What is the difference between the slice/substring/substr string methods?</li>
+        <p>slice(start, end) extracts a part of a string and returns the extracted part in a new string. <br> substring(start, end) is similar to slice(), but the difference is that start and end values less than 0 are treated as 0 <br>substr(start, length) extracts a new string according to the length defined in the second property</p>
+        <li>What are the three logical operators and what do they stand for?</li>
+        <p>Or || <br> Not ! <br>And && </p>
+        <li>What are the comparison operators?</li>
+        <p>== equal to <br> === equal type and value <br> != not equal to <br> !== the value and type are not equals <br> < less than <br> > greater than <br> >= greater or equal than <br> <= less or equal than</p>
+        <li>What are truthy and falsy values?</li>
+        <p>Truly values are values evaluated to True in a Boolean Context <br>Falsy values are values evaluated to False in a Boolean Context</p>
+        <li>What are the falsy values in JavaScript?</li>
+        <p>Undefined, Null, NaN, 0, ""</p>
+        <li>What are conditionals?</li>
+        <p>conditionals are blocks of code that only run if the condition is met</p>
+        <li>What is the syntax for an if/else conditional?</li>
+        <p>if(condition){<br>
+                //Run the code    <br>        
+            }else{ <br>
+                //Run the code <br>
+             } </p>
+        <li>What is the syntax for a switch statement?</li>
+        <p>switch(expression){<br>
+        case(valueX): <br>
+            //Run the Code <br>
+            break; <br>
+        case(valueY): <br>
+        //Run the Code <br>
+            continue; <br>
+        }</p>
+        <li>What is the syntax for a ternary operator?</li>
+        <p>expression ? do this : do that</p>
+        <li>What is nesting?</li>
+        <p>Nesting is writing code inside of some other code like a function or a condition</p>
+        <li>What are functions useful for?</li>
+        <p>Functions are uselful to simplify repetitive tasks</p>
+        <li>How do you invoke a function?</li>
+        <p>funcName(params)</p>
+        <li>What are anonymous functions?</li>
+        <p>Anonymous functions are functions that have no name.</p>
+        <li>What is function scope?</li>
+        <p>The scope is related to where the variable is available. If the variable is created whithin a function, it will only be available "inside" the function. </p>
+        <li>What are return values?</li>
+        <p>The return values are the values that a function returns when it has completed.</p>
+        <li>What are arrow functions?</li>
+        <p>Arrow functions are a simplified and concise way to create functions.</p>
+    </ol>
+</body>
+<script>
+    let string = "";
+    string = `I am a ${typeof string}`;
+    console.log(string)
+</script>
+
+</html>

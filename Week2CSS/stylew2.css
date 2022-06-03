@@ -1,38 +1,42 @@
 @font-face {
-    font-family: 'roboto-reg';
+    font-family: 'roboto';
     src: url(./Roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'roboto-bold';
+    font-family: 'roboto';
     src: url(./Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face {
-    font-family: 'roboto-extra-bold';
+    font-family: 'roboto';
     src: url(./Roboto/Roboto-Black.ttf);
+    font-weight: 900;
 }
 
 @font-face {
-    font-family: 'roboto-thin';
+    font-family: 'roboto';
     src: url(./Roboto/Roboto-Light.ttf);
+    font-weight: 200;
 }
 
 @font-face {
-    font-family: 'roboto-it';
+    font-family: 'roboto';
     src: url(./Roboto/Roboto-ThinItalic.ttf);
+    font-style: italic;
 }
 
 
 body{
-    font-family: 'roboto-reg';
+    font-family: 'roboto' !important;
     margin: 0;
 }
 
 nav {
-    width: 80%;
-    padding-right: 10%;
-    padding-left: 10%;
+    width: 75%;
+    padding-right: 13%;
+    padding-left: 12.4%;
     height: 10vh;
     background-color: #1F2937;
     color: white;
@@ -45,7 +49,7 @@ nav {
 }
 
 .logo{
-    font-family: 'roboto-bold';
+    font-family: 'roboto';
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -62,8 +66,9 @@ nav {
 .links{
     font-size: 18px;
     color: #e5e7eb;
-    font-weight: 500;
-    font-family: 'roboto-thin';
+    font-weight: 300;
+    font-family: 'roboto';
+    cursor: pointer;
 }
 
 .banner{    
@@ -83,7 +88,7 @@ nav {
 
 .bannerTitle{
     font-size: 48px;
-    font-family: 'roboto-extra-bold';
+    font-family: 'roboto';
     color: #F9FAF8;
     width: 500px;
     margin: 10px 0;
@@ -104,7 +109,7 @@ nav {
     margin-right: 5% !important;
     margin: 12px 0;
     letter-spacing: 1px;
-    font-family: 'roboto-thin';
+    font-family: 'roboto';
 }
 
 .bannerSub{
@@ -112,7 +117,7 @@ nav {
 }
 
 .bannerBtn{
-    font-family: 'roboto-bold';
+    font-family: 'roboto';
     color: white;
     background-color: #3882f6;
     padding: 10px 35px;
@@ -132,7 +137,7 @@ nav {
 .randTitle{
     font-size: 36px;
     color: #1F2937;
-    font-family: 'roboto-extra-bold';
+    font-family: 'roboto';
     text-align: center;
     margin: 35px;
 }
