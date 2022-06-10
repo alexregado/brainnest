@@ -8,11 +8,12 @@ let del = document.querySelector(".delete");
 let calc;
 let numberOn = [];
 let num = 0;
+let dot = 0;
 
 let separator;
 clear.addEventListener("click", () => {
     screen.textContent = "";
-    numberOn = [];
+    num = 0;
 })
 
 
@@ -20,11 +21,14 @@ numbers.forEach(number => {
     number.addEventListener("click", function(){
         num = "";
         num = screen.textContent += this.textContent;
-
-        if(this.textContent == "."  && dot > 1){
-            num = num.substring(0, num.length - 1);
-            dot = 0;
+        console.log(dot)
+        if(this.textContent === "."){
+            if(dot = 0){
+                dot++;
+            } else {
+            this.textContent = "";
         }
+    }
     });
 });
 
@@ -39,12 +43,6 @@ del.addEventListener("click", ()=>{num = num.substring(0, num.length - 1); scree
 
 operators.forEach(operator => {
     operator.addEventListener("click", function(){
-        if(num.includes("/0")){
-            alert("U dumb or what?");
-            num = num.substring(0, num.length - 1);
-            num = num.substring(0, num.length - 1);
-            return
-        }
 
         //CHECKS IF THERE IS ALREADY ANY OPERATOR
         for(let i = 0; i < operators.length; i++){
@@ -65,37 +63,33 @@ operators.forEach(operator => {
 });
 
 //CHECKS FOR DOTS 
-let dot = 0;
+// let dot = 0;
 window.setInterval(function(){
-        if(num.includes(".")){
-            dot++;
-        num = num.replace(".." || "..." || "...." || ".....", ".")
-        screen.textContent = num;
-        console.log('as', num)
+//         if(num.includes(".")){
+//             dot++;
+//         num = num.replace(".." || "..." || "...." || ".....", ".")
+//         screen.textContent = num;
+//         console.log('as', num)
 
-        console.log(dot)
-
-
-    }
+//         console.log(dot)
 
 
-    let lastt = num.substr(-2, 3)
-    console.log(num, lastt)
+//     }
 
-    
+
+//     let lastt = num.substr(-2, 3)
+//     console.log(num, lastt)
+
+console.log(sumMade[0])
 }, 600);
 
 
 //DO THE MATH
 equals.addEventListener("click", ()=>{
-    if(num.includes("/0")){
-        alert("U dumb or what?");
-        num = num.substring(0, num.length - 1);
-    }
     sumMade = num.split(separator)
     let finalResult = operate(sumMade[0], separator, sumMade[1]); 
-    finalResult = num;
     screen.textContent = finalResult;
+    finalResult = num;
     console.clear();
 });
 
@@ -114,7 +108,11 @@ function operate(numb1, oper, numb2){
         break;
 
         case("/"):
+        if(numb1 == 0 || numb2 == 0){
+            result = "WTF??"
+        } else{
         result = numb1 / numb2;
+        }
         break;
 
         case("*"):
@@ -123,4 +121,3 @@ function operate(numb1, oper, numb2){
     }
     return result
 }
-
