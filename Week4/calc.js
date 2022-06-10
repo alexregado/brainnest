@@ -94,8 +94,8 @@ equals.addEventListener("click", ()=>{
     }
     sumMade = num.split(separator)
     let finalResult = operate(sumMade[0], separator, sumMade[1]); 
-    screen.textContent = finalResult;
     finalResult = num;
+    screen.textContent = finalResult;
     console.clear();
 });
 
