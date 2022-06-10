@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto/Roboto-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto/Roboto-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto/Roboto-ThinItalic.ttf);
+    font-style: italic;
+}
+
+body{
+    height: 98vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: 'roboto';
+}
+
+.headers {
+    background-color: rgb(138, 191, 194);
+    text-align: center;
+    padding: 20px;
+}
+
+.goHomeLink {
+    position: absolute;
+    top: -50px;
+    left: 7px;
+    width: 50px;
+    height: 100px;
+}
+
+.goHome {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 50px;
+}
+
+.goHomeLink:hover {
+    top: 7px;
+}
+
+.resultWrapper{
+    font-weight: 500;
+    font-size: 30px;   
+    padding: 20px; 
+}
+
+.result.player{
+    color: green;
+}
+
+.result.computer{
+    color: red;
+}
+
+.scoreWrapper{
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 90px;
+}
+
+.scoreTitle{
+    margin-top: 50px;
+}
+
+.playerOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.scissors,
+.paper,
+.rock {
+    font-size: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.scissors {
+    transform: rotate(180deg);
+}
+
+.scoreWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25%;
+}
+
+.scores{
+    text-align: center;
+}

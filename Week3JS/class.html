@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        // 1
+        let app = document.querySelector("#app");
+        let par = document.createElement("p");
+        par.textContent = "Hey I'm red!"
+        app.appendChild(par);
+
+
+        //2
+        let title3 = document.createElement("h3");
+        title3.textContent = "I'm a blue h3";
+        app.appendChild(title3);
+
+
+        //3
+        let container = document.createElement("div");
+        app.append(container)
+        let title1 = document.createElement("h1");
+        title1.textContent = "I'm in a div";
+        let par2 = document.createElement("p");
+        par2.textContent = "ME TOO!";
+        container.appendChild(title1);
+        container.appendChild(par2);
+        container.style.border = "2px solid black";
+        container.style.backgroundColor = "pink";
+        
+
+
+
+    </script>
+</body>
+</html>
